@@ -30,7 +30,7 @@ const Projects = () => {
       title: 'Music School UI',
       description: 'Modern music school website with course listings and instructor profiles.',
       tags: ['Next.js', 'Tailwind CSS', 'Aceternity UI'],
-      liveUrl: 'https://music-school-nextjs-git-main-mazhers-projects.vercel.app/',
+      liveUrl: 'https://music-school-nextjs-sooty.vercel.app/',
     },
     {
       title: 'Price Scanner Landing Page',

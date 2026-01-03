@@ -55,7 +55,7 @@ const Projects = () => {
       tags: ['Next.js', 'Tailwind CSS', 'Aceternity UI'],
       gradient: 'from-purple-500 to-pink-500',
       image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80',
-      liveUrl: 'https://music-school-nextjs-git-main-mazhers-projects.vercel.app/',
+      liveUrl: 'https://music-school-nextjs-sooty.vercel.app/',
       githubUrl: '#',
     },
     {
