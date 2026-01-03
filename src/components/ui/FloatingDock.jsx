@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
-import { motion, useSpring, useTransform, useMotionValue } from 'motion/react';
-import { cn } from '../../lib/utils';
+import { motion, useSpring, useTransform, useMotionValue } from 'framer-motion';
+import { cn } from '../../utils/cn';
 
 export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
   return (
@@ -21,10 +21,10 @@ const FloatingDockMobile = ({ items, className }) => {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-slate-800/80 backdrop-blur-sm rounded-xl hover:bg-slate-700 transition-all duration-300 hover:scale-110 border border-slate-700 hover:border-blue-500/50 group"
+            className="p-3 bg-slate-800/80 backdrop-blur-sm rounded-xl hover:bg-slate-700 transition-all duration-300 hover:scale-110 border border-slate-700 hover:border-emerald-500/50 group"
             aria-label={item.title}
           >
-            <span className="text-slate-400 group-hover:text-blue-400 transition-colors">
+            <span className="text-slate-400 group-hover:text-emerald-400 transition-colors">
               {item.icon}
             </span>
           </a>
@@ -93,11 +93,11 @@ function IconContainer({ mouseX, title, icon, href }) {
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-slate-800/80 backdrop-blur-sm flex items-center justify-center relative border border-slate-700 hover:border-blue-500/50 transition-colors"
+        className="aspect-square rounded-full bg-slate-800/80 backdrop-blur-sm flex items-center justify-center relative border border-slate-700 hover:border-emerald-500/50 transition-colors"
       >
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
-          className="flex items-center justify-center text-slate-400 hover:text-blue-400 transition-colors"
+          className="flex items-center justify-center text-slate-400 hover:text-emerald-400 transition-colors"
         >
           {icon}
         </motion.div>

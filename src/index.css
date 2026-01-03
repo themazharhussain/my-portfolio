@@ -328,3 +328,39 @@ html {
   color: #10b981 !important;
   opacity: 1 !important;
 }
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  /* Keep transitions fast and minimal */
+  * {
+    transition-duration: 0.2s !important;
+  }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-float-up,
+  .animate-shimmer,
+  .animate-glow,
+  .animate-shine,
+  .animate-gradient-shift {
+    animation: none !important;
+  }
+}
+
+/* Performance: Simple optimizations for smooth UI */
+@media (hover: none) and (pointer: coarse) {
+  /* Touch devices - remove tap highlight */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
